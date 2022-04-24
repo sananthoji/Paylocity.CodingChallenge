@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Paylocity.CodingChallenge.Core\Paylocity.CodingChallenge.Core.csproj" />
+    <ProjectReference Include="..\Paylocity.CodingChallenge.Entities\Paylocity.CodingChallenge.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

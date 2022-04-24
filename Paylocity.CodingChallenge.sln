@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.API", "Paylocity.CodingChallenge.API\Paylocity.CodingChallenge.API.csproj", "{A84D8DB0-DB05-4160-8916-C6386FE501E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Core", "Paylocity.CodingChallenge.Core\Paylocity.CodingChallenge.Core.csproj", "{9185F341-A6E5-404A-9664-3054CAA9DCFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Infrastructure", "Paylocity.CodingChallenge.Infrastructure\Paylocity.CodingChallenge.Infrastructure.csproj", "{E7F55368-40BE-46B8-82D3-CDC0DEAEE7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Entities", "Paylocity.CodingChallenge.Entities\Paylocity.CodingChallenge.Entities.csproj", "{68BD9CB3-63EA-4788-B4C2-B943D8C4820A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Framework", "Paylocity.CodingChallenge.Framework\Paylocity.CodingChallenge.Framework.csproj", "{FD88C702-2450-42BC-BB8E-6517CB40BA3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Services", "Paylocity.CodingChallenge.Services\Paylocity.CodingChallenge.Services.csproj", "{A9493CDE-045F-4E44-B030-78D8E486257C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.API.Tests", "Paylocity.CodingChallenge.API.Tests\Paylocity.CodingChallenge.API.Tests.csproj", "{C788D29F-8763-4719-829B-00B237BF5E10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Core.Tests", "Paylocity.CodingChallenge.Core.Tests\Paylocity.CodingChallenge.Core.Tests.csproj", "{074F9300-18E6-4C77-897D-FD2D65CBDC8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Entities.Tests", "Paylocity.CodingChallenge.Entities.Tests\Paylocity.CodingChallenge.Entities.Tests.csproj", "{7E6A4B50-26A5-4E79-B239-6125763DE1A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Framework.Tests", "Paylocity.CodingChallenge.Framework.Tests\Paylocity.CodingChallenge.Framework.Tests.csproj", "{007F06E1-5C72-4B3D-A33B-37870B44A6CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Infrastructure.Tests", "Paylocity.CodingChallenge.Infrastructure.Tests\Paylocity.CodingChallenge.Infrastructure.Tests.csproj", "{CD3E2933-4A63-4C50-9835-00A961BC532C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Services.Tests", "Paylocity.CodingChallenge.Services.Tests\Paylocity.CodingChallenge.Services.Tests.csproj", "{20D7D339-EE46-4238-867E-8DA11F90AA1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A84D8DB0-DB05-4160-8916-C6386FE501E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84D8DB0-DB05-4160-8916-C6386FE501E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84D8DB0-DB05-4160-8916-C6386FE501E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84D8DB0-DB05-4160-8916-C6386FE501E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9185F341-A6E5-404A-9664-3054CAA9DCFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9185F341-A6E5-404A-9664-3054CAA9DCFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9185F341-A6E5-404A-9664-3054CAA9DCFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9185F341-A6E5-404A-9664-3054CAA9DCFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F55368-40BE-46B8-82D3-CDC0DEAEE7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F55368-40BE-46B8-82D3-CDC0DEAEE7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F55368-40BE-46B8-82D3-CDC0DEAEE7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F55368-40BE-46B8-82D3-CDC0DEAEE7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68BD9CB3-63EA-4788-B4C2-B943D8C4820A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BD9CB3-63EA-4788-B4C2-B943D8C4820A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BD9CB3-63EA-4788-B4C2-B943D8C4820A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BD9CB3-63EA-4788-B4C2-B943D8C4820A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD88C702-2450-42BC-BB8E-6517CB40BA3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD88C702-2450-42BC-BB8E-6517CB40BA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD88C702-2450-42BC-BB8E-6517CB40BA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD88C702-2450-42BC-BB8E-6517CB40BA3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9493CDE-045F-4E44-B030-78D8E486257C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9493CDE-045F-4E44-B030-78D8E486257C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9493CDE-045F-4E44-B030-78D8E486257C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9493CDE-045F-4E44-B030-78D8E486257C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C788D29F-8763-4719-829B-00B237BF5E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C788D29F-8763-4719-829B-00B237BF5E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C788D29F-8763-4719-829B-00B237BF5E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C788D29F-8763-4719-829B-00B237BF5E10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074F9300-18E6-4C77-897D-FD2D65CBDC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074F9300-18E6-4C77-897D-FD2D65CBDC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074F9300-18E6-4C77-897D-FD2D65CBDC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074F9300-18E6-4C77-897D-FD2D65CBDC8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6A4B50-26A5-4E79-B239-6125763DE1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6A4B50-26A5-4E79-B239-6125763DE1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6A4B50-26A5-4E79-B239-6125763DE1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6A4B50-26A5-4E79-B239-6125763DE1A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007F06E1-5C72-4B3D-A33B-37870B44A6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007F06E1-5C72-4B3D-A33B-37870B44A6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007F06E1-5C72-4B3D-A33B-37870B44A6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007F06E1-5C72-4B3D-A33B-37870B44A6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD3E2933-4A63-4C50-9835-00A961BC532C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD3E2933-4A63-4C50-9835-00A961BC532C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD3E2933-4A63-4C50-9835-00A961BC532C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD3E2933-4A63-4C50-9835-00A961BC532C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D7D339-EE46-4238-867E-8DA11F90AA1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D7D339-EE46-4238-867E-8DA11F90AA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D7D339-EE46-4238-867E-8DA11F90AA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D7D339-EE46-4238-867E-8DA11F90AA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70F10A84-72D7-439B-8B67-111789216453}
+	EndGlobalSection
+EndGlobal
