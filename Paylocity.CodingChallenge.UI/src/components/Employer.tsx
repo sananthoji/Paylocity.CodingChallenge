@@ -30,7 +30,7 @@ function Employer() {
 
   useEffect(() => {
     if (dependents.length == 0) {
-      setDependentValues(1);
+        setSelectedOption(1);
       console.log("Set default dependent values")
     }
   }, [result]);
@@ -41,20 +41,11 @@ function Employer() {
     return data
   }
 
-  const setDependentValues = (id: number) => {
-    setSelectedOption(id);
-    var dependents = result.find(a => a.id.toString() === id.toString())?.dependents as Dependent[];
-    if (dependents != null) {
-      setdependents(dependents);
-    }
-    else {
-      setdependents([])
-    }
-  }
+  
 
   const handleChange = (e) => {
     console.log(e.target.value);
-    setDependentValues(e.target.value);
+      setSelectedOption(e.target.value);
   }
 
   return (
@@ -83,13 +74,13 @@ function Employer() {
         <table>
           <tr>
             <th>Name</th>
-            <th>DependentCount</th>
-            <th>AnnualSalary</th>
-            <th>MonthlySalary</th>
-            <th>TotalDeductions</th>
-            <th>FinalAnnualSalary</th>
-            <th>FinalMonthlySalary</th>
-            <th>PayChecksPerYear</th>
+            <th>Dependent Count</th>
+            <th>Annual Salary</th>
+            <th>Monthly Salary</th>
+            <th>Total Deductions</th>
+            <th>Final AnnualSalary</th>
+            <th>Final MonthlySalary</th>
+            <th>Pay ChecksPerYear</th>
           </tr>
           <tr>
             <td>{employeeCosts.name}</td>
