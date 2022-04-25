@@ -14,7 +14,9 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Paylocity.CodingChallenge.Core.Implementation;
 using Paylocity.CodingChallenge.Core.Interfaces;
+using Paylocity.CodingChallenge.Framework;
 using Paylocity.CodingChallenge.Framework.ExceptionFilters;
+using Paylocity.CodingChallenge.Framework.Middlewares;
 using Paylocity.CodingChallenge.Infrastructure;
 using Paylocity.CodingChallenge.Services;
 using System;
@@ -84,6 +86,8 @@ namespace Paylocity.CodingChallenge.API
             services.AddScoped<IEmployeeDependentRepository, EmployeeDependentRepository>();
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<IDependentTypeRepository, DependentTypeRepository>();
+
+            services.AddScoped<IPaylocityUserContext, PaylocityUserContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -110,6 +114,8 @@ namespace Paylocity.CodingChallenge.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UsePaylocityUserContext();
 
             app.UseCors(
                     builder => builder.AllowAnyOrigin()

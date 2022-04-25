@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Paylocity.CodingChallenge.Framework
 {
-    internal class PaylocityUserContext
+    public class PaylocityUserContext : IPaylocityUserContext
     {
         public int Id { get; set; }
 
