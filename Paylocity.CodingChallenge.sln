@@ -27,6 +27,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Services.Tests", "Paylocity.CodingChallenge.Services.Tests\Paylocity.CodingChallenge.Services.Tests.csproj", "{20D7D339-EE46-4238-867E-8DA11F90AA1E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paylocity.CodingChallenge.UI", "Paylocity.CodingChallenge.UI", "{976600CF-4DA9-479F-8058-80E2E97D5D22}"
+	ProjectSection(SolutionItems) = preProject
+		Paylocity.CodingChallenge.UI\.env = Paylocity.CodingChallenge.UI\.env
+		Paylocity.CodingChallenge.UI\.env.development = Paylocity.CodingChallenge.UI\.env.development
+		Paylocity.CodingChallenge.UI\.env.production = Paylocity.CodingChallenge.UI\.env.production
+		Paylocity.CodingChallenge.UI\package-lock.json = Paylocity.CodingChallenge.UI\package-lock.json
+		Paylocity.CodingChallenge.UI\package.json = Paylocity.CodingChallenge.UI\package.json
+		Paylocity.CodingChallenge.UI\README.md = Paylocity.CodingChallenge.UI\README.md
+		Paylocity.CodingChallenge.UI\tsconfig.json = Paylocity.CodingChallenge.UI\tsconfig.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
