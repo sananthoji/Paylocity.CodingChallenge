@@ -70,7 +70,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "models", "models", "{D644BDAA-2494-46AD-B785-FA675CC20CCD}"
 	ProjectSection(SolutionItems) = preProject
-		Paylocity.CodingChallenge.UI\src\models\Dependent.ts = Paylocity.CodingChallenge.UI\src\models\Dependent.ts
 		Paylocity.CodingChallenge.UI\src\models\Employee.ts = Paylocity.CodingChallenge.UI\src\models\Employee.ts
 		Paylocity.CodingChallenge.UI\src\models\EmployeeCosts.ts = Paylocity.CodingChallenge.UI\src\models\EmployeeCosts.ts
 	EndProjectSection

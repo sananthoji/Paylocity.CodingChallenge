@@ -1,6 +1,5 @@
 import React, { useState, useEffect, Component } from 'react';
 import { Container } from 'react-bootstrap';
-import { Dependent } from '../models/Dependent';
 import { Employee } from '../models/Employee';
 import { EmployeeCosts } from '../models/EmployeeCosts';
 import EmployeeService from '../service/EmployeeService';
@@ -10,7 +9,6 @@ function Employer() {
 
   const [result, setResult] = useState<Employee[]>([]);
   const [selectedOption, setSelectedOption] = useState(1);
-  const [dependents, setdependents] = useState<Dependent[]>([]);
   const [employeeCosts, setemployeeCosts] = useState(new EmployeeCosts());
   const headings = ['Name', 'Relation'];
   const employeeService = new EmployeeService();
@@ -29,10 +27,7 @@ function Employer() {
   }, []);
 
   useEffect(() => {
-    if (dependents.length == 0) {
-        setSelectedOption(1);
-      console.log("Set default dependent values")
-    }
+      setSelectedOption(1);
   }, [result]);
 
   const getEmployeeBenefitsCosts = async () => {
