@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Paylocity.CodingChallenge.Core.Interfaces;
 using Paylocity.CodingChallenge.Entities;
@@ -11,6 +12,7 @@ namespace Paylocity.CodingChallenge.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize]
     public class EmployeesController : ControllerBase
     {
         private readonly ILogger logger;
@@ -51,7 +53,7 @@ namespace Paylocity.CodingChallenge.API.Controllers
         }
 
         // GET api/<EmployeesController>/5
-        [HttpGet("GetEmployeeDeduction/{id}")]
+        [HttpGet("GetEmployeeDeduction")]
         public async Task<EmployeeDeductions> GetEmployeeDeduction(int employeeId)
         {
             logger.LogInformation("EmployeeProcessor-GetEmployee-Start");

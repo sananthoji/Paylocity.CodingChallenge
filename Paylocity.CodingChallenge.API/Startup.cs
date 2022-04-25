@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Identity.Web;
+using Microsoft.IdentityModel.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Paylocity.CodingChallenge.Core.Implementation;
 using Paylocity.CodingChallenge.Core.Interfaces;
@@ -42,8 +45,24 @@ namespace Paylocity.CodingChallenge.API
 
             services.AddAuthentication(options =>
             {
-                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(options => Configuration.Bind("AzureAd", options));
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            //.AddJwtBearer(opt =>
+            //{
+            //    opt.Authority = "https://login.microsoftonline.com/8cf695c9-c697-4988-8d32-0431a46d8321";
+            //    opt.Audience = "02e2421f-33ef-4404-bcc7-583d3e7c4115"; // Set this to the App ID URL for the web API, which you created when you registered the web API with Azure AD.
+            //    opt.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        ValidateIssuer = false
+            //    };
+            //    opt.Events = new JwtBearerEvents()
+            //    {
+            //        OnAuthenticationFailed = AuthenticationFailed,
+            //        OnTokenValidated = TokenValidated,
+            //        OnForbidden = ForbiddenContext1
+            //    };
+            //});
+            .AddJwtBearer(options => Configuration.Bind("AzureAd", options));
 
             services.AddControllers(options =>
             {
@@ -76,6 +95,7 @@ namespace Paylocity.CodingChallenge.API
 
             if (env.IsDevelopment())
             {
+                IdentityModelEventSource.ShowPII = true;
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Paylocity.CodingChallenge.API v1"));
@@ -107,8 +127,26 @@ namespace Paylocity.CodingChallenge.API
         {
             // For debugging purposes only!
             var s = $"AuthenticationFailed: {arg.Exception.Message}";
-            arg.Response.ContentLength = s.Length;
-            arg.Response.Body.Write(Encoding.UTF8.GetBytes(s), 0, s.Length);
+            //arg.Response.ContentLength = s.Length;
+            //arg.Response.Body.Write(Encoding.UTF8.GetBytes(s), 0, s.Length);
+            return Task.FromResult(0);
+        }
+
+        private Task TokenValidated(TokenValidatedContext arg)
+        {
+            // For debugging purposes only!
+            var s = $"AuthenticationFailed:";
+            //arg.Response.ContentLength = s.Length;
+            //arg.Response.Body.Write(Encoding.UTF8.GetBytes(s), 0, s.Length);
+            return Task.FromResult(0);
+        }
+
+        private Task ForbiddenContext1(ForbiddenContext arg)
+        {
+            // For debugging purposes only!
+            var s = $"AuthenticationFailed: {arg}";
+            //arg.Response.ContentLength = s.Length;
+            //arg.Response.Body.Write(Encoding.UTF8.GetBytes(s), 0, s.Length);
             return Task.FromResult(0);
         }
     }

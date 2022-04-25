@@ -9,23 +9,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Infrastructure", "Paylocity.CodingChallenge.Infrastructure\Paylocity.CodingChallenge.Infrastructure.csproj", "{E7F55368-40BE-46B8-82D3-CDC0DEAEE7AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Entities", "Paylocity.CodingChallenge.Entities\Paylocity.CodingChallenge.Entities.csproj", "{68BD9CB3-63EA-4788-B4C2-B943D8C4820A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Entities", "Paylocity.CodingChallenge.Entities\Paylocity.CodingChallenge.Entities.csproj", "{68BD9CB3-63EA-4788-B4C2-B943D8C4820A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Framework", "Paylocity.CodingChallenge.Framework\Paylocity.CodingChallenge.Framework.csproj", "{FD88C702-2450-42BC-BB8E-6517CB40BA3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Framework", "Paylocity.CodingChallenge.Framework\Paylocity.CodingChallenge.Framework.csproj", "{FD88C702-2450-42BC-BB8E-6517CB40BA3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Services", "Paylocity.CodingChallenge.Services\Paylocity.CodingChallenge.Services.csproj", "{A9493CDE-045F-4E44-B030-78D8E486257C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Services", "Paylocity.CodingChallenge.Services\Paylocity.CodingChallenge.Services.csproj", "{A9493CDE-045F-4E44-B030-78D8E486257C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.API.Tests", "Paylocity.CodingChallenge.API.Tests\Paylocity.CodingChallenge.API.Tests.csproj", "{C788D29F-8763-4719-829B-00B237BF5E10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.API.Tests", "Paylocity.CodingChallenge.API.Tests\Paylocity.CodingChallenge.API.Tests.csproj", "{C788D29F-8763-4719-829B-00B237BF5E10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Core.Tests", "Paylocity.CodingChallenge.Core.Tests\Paylocity.CodingChallenge.Core.Tests.csproj", "{074F9300-18E6-4C77-897D-FD2D65CBDC8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Core.Tests", "Paylocity.CodingChallenge.Core.Tests\Paylocity.CodingChallenge.Core.Tests.csproj", "{074F9300-18E6-4C77-897D-FD2D65CBDC8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Entities.Tests", "Paylocity.CodingChallenge.Entities.Tests\Paylocity.CodingChallenge.Entities.Tests.csproj", "{7E6A4B50-26A5-4E79-B239-6125763DE1A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Entities.Tests", "Paylocity.CodingChallenge.Entities.Tests\Paylocity.CodingChallenge.Entities.Tests.csproj", "{7E6A4B50-26A5-4E79-B239-6125763DE1A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Framework.Tests", "Paylocity.CodingChallenge.Framework.Tests\Paylocity.CodingChallenge.Framework.Tests.csproj", "{007F06E1-5C72-4B3D-A33B-37870B44A6CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Framework.Tests", "Paylocity.CodingChallenge.Framework.Tests\Paylocity.CodingChallenge.Framework.Tests.csproj", "{007F06E1-5C72-4B3D-A33B-37870B44A6CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Infrastructure.Tests", "Paylocity.CodingChallenge.Infrastructure.Tests\Paylocity.CodingChallenge.Infrastructure.Tests.csproj", "{CD3E2933-4A63-4C50-9835-00A961BC532C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Infrastructure.Tests", "Paylocity.CodingChallenge.Infrastructure.Tests\Paylocity.CodingChallenge.Infrastructure.Tests.csproj", "{CD3E2933-4A63-4C50-9835-00A961BC532C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paylocity.CodingChallenge.Services.Tests", "Paylocity.CodingChallenge.Services.Tests\Paylocity.CodingChallenge.Services.Tests.csproj", "{20D7D339-EE46-4238-867E-8DA11F90AA1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paylocity.CodingChallenge.Services.Tests", "Paylocity.CodingChallenge.Services.Tests\Paylocity.CodingChallenge.Services.Tests.csproj", "{20D7D339-EE46-4238-867E-8DA11F90AA1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
