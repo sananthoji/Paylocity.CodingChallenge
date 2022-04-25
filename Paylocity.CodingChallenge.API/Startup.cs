@@ -1,3 +1,5 @@
+using CorrelationId;
+using CorrelationId.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -44,7 +46,7 @@ namespace Paylocity.CodingChallenge.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Paylocity.CodingChallenge.API", Version = "v1" });
             });
-
+            services.AddDefaultCorrelationId();
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -108,6 +110,8 @@ namespace Paylocity.CodingChallenge.API
             {
                 app.UseHsts();
             }
+
+            app.UseCorrelationId();
 
             app.UseHttpsRedirection();
 
