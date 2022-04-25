@@ -35,7 +35,49 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paylocity.CodingChallenge.U
 		Paylocity.CodingChallenge.UI\package-lock.json = Paylocity.CodingChallenge.UI\package-lock.json
 		Paylocity.CodingChallenge.UI\package.json = Paylocity.CodingChallenge.UI\package.json
 		Paylocity.CodingChallenge.UI\README.md = Paylocity.CodingChallenge.UI\README.md
+		Paylocity.CodingChallenge.UI\public\robots.txt = Paylocity.CodingChallenge.UI\public\robots.txt
 		Paylocity.CodingChallenge.UI\tsconfig.json = Paylocity.CodingChallenge.UI\tsconfig.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{E247D33A-3C79-4357-AD1B-324988F9BED3}"
+	ProjectSection(SolutionItems) = preProject
+		Paylocity.CodingChallenge.UI\public\favicon.ico = Paylocity.CodingChallenge.UI\public\favicon.ico
+		Paylocity.CodingChallenge.UI\public\index.html = Paylocity.CodingChallenge.UI\public\index.html
+		Paylocity.CodingChallenge.UI\public\logo192.png = Paylocity.CodingChallenge.UI\public\logo192.png
+		Paylocity.CodingChallenge.UI\public\logo512.png = Paylocity.CodingChallenge.UI\public\logo512.png
+		Paylocity.CodingChallenge.UI\public\manifest.json = Paylocity.CodingChallenge.UI\public\manifest.json
+		Paylocity.CodingChallenge.UI\public\robots.txt = Paylocity.CodingChallenge.UI\public\robots.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{74C2B2DE-C950-46CD-AD30-473EFAE030E6}"
+	ProjectSection(SolutionItems) = preProject
+		Paylocity.CodingChallenge.UI\src\App.css = Paylocity.CodingChallenge.UI\src\App.css
+		Paylocity.CodingChallenge.UI\src\App.test.tsx = Paylocity.CodingChallenge.UI\src\App.test.tsx
+		Paylocity.CodingChallenge.UI\src\App.tsx = Paylocity.CodingChallenge.UI\src\App.tsx
+		Paylocity.CodingChallenge.UI\src\index.css = Paylocity.CodingChallenge.UI\src\index.css
+		Paylocity.CodingChallenge.UI\src\index.tsx = Paylocity.CodingChallenge.UI\src\index.tsx
+		Paylocity.CodingChallenge.UI\src\logo.png = Paylocity.CodingChallenge.UI\src\logo.png
+		Paylocity.CodingChallenge.UI\src\react-app-env.d.ts = Paylocity.CodingChallenge.UI\src\react-app-env.d.ts
+		Paylocity.CodingChallenge.UI\src\reportWebVitals.ts = Paylocity.CodingChallenge.UI\src\reportWebVitals.ts
+		Paylocity.CodingChallenge.UI\src\setupTests.ts = Paylocity.CodingChallenge.UI\src\setupTests.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{29439BCD-4824-46AB-B1BD-271480BB9B19}"
+	ProjectSection(SolutionItems) = preProject
+		Paylocity.CodingChallenge.UI\src\components\Employer.css = Paylocity.CodingChallenge.UI\src\components\Employer.css
+		Paylocity.CodingChallenge.UI\src\components\Employer.tsx = Paylocity.CodingChallenge.UI\src\components\Employer.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "models", "models", "{D644BDAA-2494-46AD-B785-FA675CC20CCD}"
+	ProjectSection(SolutionItems) = preProject
+		Paylocity.CodingChallenge.UI\src\models\Dependent.ts = Paylocity.CodingChallenge.UI\src\models\Dependent.ts
+		Paylocity.CodingChallenge.UI\src\models\Employee.ts = Paylocity.CodingChallenge.UI\src\models\Employee.ts
+		Paylocity.CodingChallenge.UI\src\models\EmployeeCosts.ts = Paylocity.CodingChallenge.UI\src\models\EmployeeCosts.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "service", "service", "{AE778BF6-52AC-413E-97EC-58F632251F32}"
+	ProjectSection(SolutionItems) = preProject
+		Paylocity.CodingChallenge.UI\src\service\EmployeeService.ts = Paylocity.CodingChallenge.UI\src\service\EmployeeService.ts
 	EndProjectSection
 EndProject
 Global
@@ -95,6 +137,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E247D33A-3C79-4357-AD1B-324988F9BED3} = {976600CF-4DA9-479F-8058-80E2E97D5D22}
+		{74C2B2DE-C950-46CD-AD30-473EFAE030E6} = {976600CF-4DA9-479F-8058-80E2E97D5D22}
+		{29439BCD-4824-46AB-B1BD-271480BB9B19} = {74C2B2DE-C950-46CD-AD30-473EFAE030E6}
+		{D644BDAA-2494-46AD-B785-FA675CC20CCD} = {74C2B2DE-C950-46CD-AD30-473EFAE030E6}
+		{AE778BF6-52AC-413E-97EC-58F632251F32} = {74C2B2DE-C950-46CD-AD30-473EFAE030E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {70F10A84-72D7-439B-8B67-111789216453}
